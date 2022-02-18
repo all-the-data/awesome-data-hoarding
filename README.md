@@ -14,6 +14,10 @@ Inspired by Reddit's /r/DataHoarder
 - [StreamRipper](http://streamripper.sourceforge.net)
     - Example: `streamripper ###URL### -u "FreeAmp/2.x" -q -l 86400`
 
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools)
+    - [network tab](https://developer.chrome.com/docs/devtools/network/reference) - track requests
+    - [resources tab](https://developer.chrome.com/docs/devtools/resources)
+
 ### Specialised
 
 - [youtube-dl](https://yt-dl.org)
@@ -25,6 +29,15 @@ Inspired by Reddit's /r/DataHoarder
     - Example: `docker run --rm -v /var/www/zaphod/adhd:/app/out tyrrrz/discordchatexporter:stable export --channel ###ID### --token ###SECRET### --format Json`
     - List guilds: `docker run tyrrrz/discordchatexporter:stable guilds`
     - List channels: `docker run tyrrrz/discordchatexporter:stable channels --guild ###ID###`
+
+## Processing tools
+
+- [jq](https://stedolan.github.io/jq/)
+    - Example: `jq -j -M --stream -f discord1.jq` [discord1.jq](https://gist.github.com/willsheppard/f9b7cc9b130784ffd7bd8f144cf892f8)
+
+## Techniques
+
+- Check the Chrome 
 
 ## Communities
 
