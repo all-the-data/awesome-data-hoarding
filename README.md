@@ -15,7 +15,7 @@ Inspired by Reddit's /r/DataHoarder
     - Example: `streamripper ###URL### -u "FreeAmp/2.x" -q -l 86400`
 
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools)
-    - [network tab](https://developer.chrome.com/docs/devtools/network/reference) - track requests
+    - [network tab](https://developer.chrome.com/docs/devtools/network/reference)
     - [resources tab](https://developer.chrome.com/docs/devtools/resources)
 
 ### Specialised
@@ -37,7 +37,11 @@ Inspired by Reddit's /r/DataHoarder
 
 ## Techniques
 
-- Check the Chrome 
+### Extract from chrome devtools
+
+Good for: Structured data
+
+- The network tab shows XHR requests being made 
 
 ## Communities
 
