@@ -1,6 +1,6 @@
 # awesome-data-hoarding
 
-A collection of code and tools for scraping, hoarding, organising and browsing data
+A single-page cheat sheet of commands and tools for scraping, saving, hoarding, archiving, collecting, organising and browsing data.
 
 Inspired by Reddit's /r/DataHoarder
 
