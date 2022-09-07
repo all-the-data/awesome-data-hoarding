@@ -8,7 +8,9 @@ Inspired by Reddit's [/r/DataHoarder](https://www.reddit.com/r/DataHoarder/)
 
 Which archiving tool should you choose?
 
-- Website: wget or [ArchiveBot](https://wiki.archiveteam.org/index.php?title=ArchiveBot)
+- Mediawiki website: For an XML dump containing wikitext, copy names of pages from `/wiki/Special:AllPages` and paste into `/wiki/Special:Export`. Parse wikitext with [mwparserfromhell](https://github.com/earwig/mwparserfromhell).
+
+- Other website: wget or [ArchiveBot](https://wiki.archiveteam.org/index.php?title=ArchiveBot)
 
 - Reddit thread: TO DO
 
