@@ -2,14 +2,37 @@
 
 A single-page cheat sheet of commands and tools for scraping, saving, hoarding, archiving, collecting, organising and browsing data.
 
-Inspired by Reddit's /r/DataHoarder
+Inspired by Reddit's [/r/DataHoarder](https://www.reddit.com/r/DataHoarder/)
+
+## Types of content
+
+Which archiving tool should you choose?
+
+- Website: wget or [ArchiveBot](https://wiki.archiveteam.org/index.php?title=ArchiveBot)
+
+- Reddit thread: TO DO
+
+- Discord: DiscordChatExporter
+
+- Youtube video/music: youtube-dl
 
 ## Scraping tools
 
 ### General purpose
 
 - [wget](https://www.gnu.org/software/wget/manual/wget.html)
-    - Example: `wget --mirror --convert-links --adjust-extension --page-requisites --span-hosts -U Mozilla -e robots=off --no-cookies -D www.example.com,files.example.com,images.example.com http://www.example.com/`
+
+```
+wget \
+    -e 'robots=off' \
+    --accept '*.*' \
+    --mirror \
+    --wait 2 \
+    --random-wait \
+    --convert-links \
+    --user-agent 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.7113.93 Safari/537.36' \
+    'http://www.example.com/'
+```
 
 - [StreamRipper](http://streamripper.sourceforge.net)
     - Example: `streamripper ###URL### -u "FreeAmp/2.x" -q -l 86400`
@@ -42,6 +65,10 @@ Inspired by Reddit's /r/DataHoarder
 Good for: Structured data
 
 - The network tab shows XHR requests being made 
+
+## Discussion
+
+- If an archive of data is made, and that data cannot be viewed in a way similar to its original presentation, then the average person can't view it at all. It may as well not exist for that person. You might retort "A viewer program could be built". But if that viewer program doesn't yet exist, then the data still can't be viewed. It's a Schroedinger's archive.
 
 ## Communities
 
