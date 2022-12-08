@@ -4,21 +4,25 @@ A single-page cheat sheet of commands and tools for scraping, saving, hoarding, 
 
 Inspired by Reddit's [/r/DataHoarder](https://www.reddit.com/r/DataHoarder/)
 
-## Types of content
+## Quick reference
 
 Which archiving tool should you choose?
 
-- Mediawiki website: For an XML dump containing wikitext, copy names of pages from `/wiki/Special:AllPages` and paste into `/wiki/Special:Export`. Parse wikitext with [mwparserfromhell](https://github.com/earwig/mwparserfromhell).
+- Mediawiki website: Native dump using `/wiki/Special:AllPages` and `/wiki/Special:Export`.
 
-- Other website: wget or [ArchiveBot](https://wiki.archiveteam.org/index.php?title=ArchiveBot)
+- Other website: wget, httrack or [ArchiveBot](https://wiki.archiveteam.org/index.php?title=ArchiveBot).
 
 - Reddit thread: TO DO
 
-- Discord: DiscordChatExporter
+- Discord: DiscordChatExporter (see below for notes)
 
-- Youtube video/music: youtube-dl
+- Youtube video/music: youtube-dl (see below for notes)
+
+- Tumblr: [TumblThreeApp](https://github.com/TumblThreeApp/TumblThree)
 
 ## Scraping tools
+
+Details of precise sets of commands.
 
 ### General purpose
 
@@ -44,6 +48,12 @@ wget \
     - [resources tab](https://developer.chrome.com/docs/devtools/resources)
 
 ### Specialised
+
+- Mediawiki
+    - For an XML dump containing wikitext...
+    - Copy names of pages from `/wiki/Special:AllPages`...
+    - Paste into `/wiki/Special:Export`
+    - (optional) Parse resulting wikitext with [mwparserfromhell](https://github.com/earwig/mwparserfromhell).
 
 - [youtube-dl](https://yt-dl.org)
     - Example: `youtube-dl ###URL### --ignore-errors --extract-audio --audio-quality 0 --audio-format mp3 --prefer-ffmpeg --output "%(title)s.%(ext)s" `
