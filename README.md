@@ -18,7 +18,9 @@ Which archiving tool should you choose?
 
 - Youtube video/music: youtube-dl (see below for notes)
 
-- Tumblr: [TumblThreeApp](https://github.com/TumblThreeApp/TumblThree)
+- Tumblr: [TumblThreeApp](https://github.com/TumblThreeApp/TumblThree) (Windows)
+
+- Twitter: [ThreadReaderApp](https://threadreaderapp.com/)
 
 ## Scraping tools
 
