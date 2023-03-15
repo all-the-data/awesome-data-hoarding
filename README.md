@@ -68,11 +68,57 @@ wget \
     - (optional) Parse resulting wikitext with [mwparserfromhell](https://github.com/earwig/mwparserfromhell).
 
 - [youtube-dl](https://yt-dl.org) / [yt-dlp](https://github.com/yt-dlp/yt-dlp)
-    - Video: `yt-dlp --ignore-errors --format 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' --output "%(playlist_title)s/%(title)s.%(ext)s" --throttled-rate 10K ###URL###`
-    - Audio: `yt-dlp --ignore-errors --extract-audio --audio-quality 0 --audio-format mp3 --prefer-ffmpeg --output "%(playlist_title)s/%(album)s - %(playlist_index)02d - %(artist)s - %(title)s.%(ext)s" --throttled-rate 10K ###URL###`
-    - Playlist: `yt-dlp ...etc... --output "%(playlist_title)s/%(playlist_title)s - %(playlist_index)02d - %(artist)s - %(title)s.%(ext)s"  ###URL###`
-    - Album: `yt-dlp ...etc... --output "%(album)s - %(artist)s - %(track)s.%(ext)s" ###URL###`
-    - Multiple playlists: `for URL in $(cat list); do yt-dlp ...etc... "$URL"; done`
+  - Video
+
+```
+yt-dlp \
+    --ignore-errors \
+    --format 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' \
+    --output "%(playlist_title)s/%(title)s.%(ext)s" \
+    --throttled-rate 10K \
+    ###URL###
+```
+
+  - Audio
+
+```
+yt-dlp \
+    --ignore-errors \
+    --extract-audio \
+    --audio-quality 0 \
+    --audio-format mp3 \
+    --prefer-ffmpeg \
+    --output "%(playlist_title)s/%(artist)s - %(title)s.%(ext)s" \
+    --throttled-rate 10K \
+    ###URL###
+```
+
+  - Audio album playlist
+
+```
+yt-dlp \
+    ...etc... \
+    --output "%(artist)s - %(album)s/%(artist)s - %(album)s - %(playlist_index)02d - %(track)s.%(ext)s" \
+    ###URL###
+```
+
+  - Video playlist
+
+```
+yt-dlp \
+    ...etc... \
+    --output "%(playlist_title)s/%(playlist_index)03d - %(artist)s - %(title)s.%(ext)s" \
+    ###URL###
+```
+
+  - Multiple playlists
+
+```
+for URL in $(cat list)
+do
+    yt-dlp ...etc... "$URL"
+done
+```
 
 - [DiscordChatExporter](https://github.com/Tyrrrz/DiscordChatExporter) + excellent [wiki](https://github.com/Tyrrrz/DiscordChatExporter/wiki)
     - Example: `docker run --rm -v /var/www/zaphod/adhd:/app/out tyrrrz/discordchatexporter:stable export --channel ###ID### --token ###SECRET### --format Json`
