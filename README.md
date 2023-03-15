@@ -139,11 +139,12 @@ done
 
 ## Techniques
 
-### Different ways to extract playlist data from YouTube and YT Music
+### Extract playlist data from YouTube and YT Music
 
 Input: https://music.youtube.com/library/playlists
 Goal: Extract a list of playlists suitable for feeding to youtube-dl / yt-dlp
 
+These are all equivalent ways to achieve the same thing:
 1. Chrome: Save As | Web Page, HTML Only --> doesn't work, empty page
 1. Chrome: Save As | Web page, Single File --> works, full HTML, embeds images, uses "quoted printable encoding", i.e. `=` becomes `=3D`
 1. Chrome: Save As | Web page, Complete --> works, full HTML, not encoded, saves album/playlist covers as image files.
@@ -154,6 +155,22 @@ Goal: Extract a list of playlists suitable for feeding to youtube-dl / yt-dlp
 1. Chrome: Extensions | AutoHAR | chrome --auto-open-devtools-for-tabs | ...etc
 1. Chrome: DevTools | Network | Filter | Fetch/XHR | https://music.youtube.com/youtubei/v1/browse/...etc... | (a) Save all as HAR with content, (b) (down-arrow near top-right) Export HAR... 
 1. (Idea) Headless chrome + puppeteer or playwright
+
+Javascrip snippet:
+    
+```
+items = document.querySelectorAll("#items > ytmusic-two-row-item-renderer");
+items.forEach((item) => {
+    drill = item.querySelector("div.details.style-scope.ytmusic-two-row-item-renderer");
+    span = drill.querySelector('span > yt-formatted-string > span:nth-child(3)');
+    if (! span) { return };
+    console.log(
+        drill.querySelector('a').toString()
+        + "    " + span.innerHTML
+        + "    " + drill.querySelector('a').text
+    );
+});
+```
 
 ### Case studies
 
