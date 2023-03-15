@@ -1,6 +1,6 @@
 # awesome-data-hoarding
 
-A single-page cheat sheet of commands and tools for scraping, saving, hoarding, archiving, collecting, organising and browsing data.
+A concise cheat-sheet of commands and tools for scraping, saving, hoarding, archiving, collecting, organising and browsing data.
 
 Inspired by Reddit's [/r/DataHoarder](https://www.reddit.com/r/DataHoarder/)
 
@@ -68,9 +68,11 @@ wget \
     - (optional) Parse resulting wikitext with [mwparserfromhell](https://github.com/earwig/mwparserfromhell).
 
 - [youtube-dl](https://yt-dl.org) / [yt-dlp](https://github.com/yt-dlp/yt-dlp)
-    - Example: `youtube-dl ###URL### --ignore-errors --extract-audio --audio-quality 0 --audio-format mp3 --prefer-ffmpeg --output "%(title)s.%(ext)s" `
-    - Playlist: `youtube-dl ###URL### ...etc... --output "%(playlist_title)s/%(playlist_title)s - %(playlist_index)02d - %(artist)s - %(title)s.%(ext)s"`
-    - Album: `youtube-dl ###URL###  ...etc... --output "%(album)s - %(artist)s - %(track)s.%(ext)s"`
+    - Video: `yt-dlp --ignore-errors --format 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' --output "%(playlist_title)s/%(title)s.%(ext)s" --throttled-rate 10K ###URL###`
+    - Audio: `yt-dlp --ignore-errors --extract-audio --audio-quality 0 --audio-format mp3 --prefer-ffmpeg --output "%(playlist_title)s/%(album)s - %(playlist_index)02d - %(artist)s - %(title)s.%(ext)s" --throttled-rate 10K ###URL###`
+    - Playlist: `yt-dlp ...etc... --output "%(playlist_title)s/%(playlist_title)s - %(playlist_index)02d - %(artist)s - %(title)s.%(ext)s"  ###URL###`
+    - Album: `yt-dlp ...etc... --output "%(album)s - %(artist)s - %(track)s.%(ext)s" ###URL###`
+    - Multiple playlists: `for URL in $(cat list); do yt-dlp ...etc... "$URL"; done`
 
 - [DiscordChatExporter](https://github.com/Tyrrrz/DiscordChatExporter) + excellent [wiki](https://github.com/Tyrrrz/DiscordChatExporter/wiki)
     - Example: `docker run --rm -v /var/www/zaphod/adhd:/app/out tyrrrz/discordchatexporter:stable export --channel ###ID### --token ###SECRET### --format Json`
@@ -85,17 +87,34 @@ wget \
 - [XPath Helper](https://chrome.google.com/webstore/detail/xpath-helper/hgimnogjllphhhkhlmebbmlgjoejdpjl)
     - Example: Ctrl-Shift-X (or Command-Shift-X on Mac)
 
+- [AutoHAR](https://github.com/Aloisius/autohar)
+
+- [HAR Recorder](https://chrome.google.com/webstore/detail/har-recorder/emfabjnfjiknifjlfpjobbecfepplhkd)
+
 ## Techniques
 
-### Extract from chrome devtools
+### Different ways to extract playlist data from YouTube and YT Music
 
-Good for: Structured data
+Input: https://music.youtube.com/library/playlists
+Goal: Extract a list of playlists suitable for feeding to youtube-dl / yt-dlp
 
-- The network tab shows XHR requests being made 
+1. Chrome: Save As | Web Page, HTML Only --> doesn't work, empty page
+1. Chrome: Save As | Web page, Single File --> works, full HTML, embeds images, uses "quoted printable encoding", i.e. `=` becomes `=3D`
+1. Chrome: Save As | Web page, Complete --> works, full HTML, not encoded, saves album/playlist covers as image files.
+1. Chrome: DevTools | Elements | <body> | right-click | Copy | Copy element | Paste into text editor --> works, full HTML
+1. Chrome: Extensions | XPath Helper | Ctrl-Shift-X | Hover over element | Shift | Edit XPath to remove e.g. `[409]` | Append `/@href` --> works, list of URLs
+1. Chrome: Extensions | AutoHAR | chrome --auto-open-devtools-for-tabs | ...etc
+1. Chrome: DevTools | Network | Filter | Fetch/XHR | https://music.youtube.com/youtubei/v1/browse/...etc... | (a) Save all as HAR with content, (b) (down-arrow near top-right) Export HAR... 
+1. (Idea) Headless chrome + puppeteer or playwright
+
+### Case studies
+
+- [naive-slack-scraper](). Hypothetical code that cannot exist, as it potentially wouldn't follow terms of service.
+- [pokemon-data](https://github.com/pokemon-names/pokemon-data/blob/main/data/README.md). jq examples.
 
 ## Discussion
 
-- If an archive of data is made, and that data cannot be viewed in a way similar to its original presentation, then the average person can't view it at all. It may as well not exist for that person. You might retort "A viewer program could be built". But if that viewer program doesn't yet exist, then the data still can't be viewed. It's a Schroedinger's archive.
+- If an archive of data is made, and that data cannot be viewed reasonably easily in a way similar to its original presentation by a person on the street, then it can be considered not to be viewable at all. It may as well not exist for public purposes. A possible retort is to assert "A viewer program could be built". But if that viewer program doesn't yet exist, then the data still can't be viewed. It's a Schroedinger's archive.
 
 ## Communities
 
