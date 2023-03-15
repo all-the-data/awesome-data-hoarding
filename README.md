@@ -8,19 +8,29 @@ Inspired by Reddit's [/r/DataHoarder](https://www.reddit.com/r/DataHoarder/)
 
 Which archiving tool should you choose?
 
-- Mediawiki website: Native dump using `/wiki/Special:AllPages` and `/wiki/Special:Export`.
+- Amazon Video: Unknown. Check torrents instead.
 
-- Other website: wget, httrack or [ArchiveBot](https://wiki.archiveteam.org/index.php?title=ArchiveBot).
-
-- Reddit thread: TO DO
+- BBC iPlayer: [youtube-dl](https://youtube-dl.org/) / [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 
 - Discord: DiscordChatExporter (see below for notes)
 
-- Youtube video/music: youtube-dl (see below for notes)
+- Mediawiki website: Native dump using `/wiki/Special:AllPages` and `/wiki/Special:Export`.
+
+- Netflix: Unknown. Check torrents instead.
+
+- Reddit thread: TO DO
 
 - Tumblr: [TumblThreeApp](https://github.com/TumblThreeApp/TumblThree) (Windows)
 
 - Twitter: [ThreadReaderApp](https://threadreaderapp.com/)
+
+- Torrents: Use [unblockit](https://www.google.com/search?q=unblockit) for a list of torrent sites. Official [Twitter](https://twitter.com/thepirateproxy) / [Reddit](https://www.reddit.com/r/Unblockit/).
+
+- Private torrent trackers: Might contain any TV or movie ever broadcat. It can be difficult to get an invite, and you may need to maintain an upload ratio.
+
+- Websites generally: wget, httrack or [ArchiveBot](https://wiki.archiveteam.org/index.php?title=ArchiveBot).
+
+- Youtube video/music: [youtube-dl](https://youtube-dl.org/) (see below for notes) / [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 
 ## Scraping tools
 
@@ -57,7 +67,7 @@ wget \
     - Paste into `/wiki/Special:Export`
     - (optional) Parse resulting wikitext with [mwparserfromhell](https://github.com/earwig/mwparserfromhell).
 
-- [youtube-dl](https://yt-dl.org)
+- [youtube-dl](https://yt-dl.org) / [yt-dlp](https://github.com/yt-dlp/yt-dlp)
     - Example: `youtube-dl ###URL### --ignore-errors --extract-audio --audio-quality 0 --audio-format mp3 --prefer-ffmpeg --output "%(title)s.%(ext)s" `
     - Playlist: `youtube-dl ###URL### ...etc... --output "%(playlist_title)s/%(playlist_title)s - %(playlist_index)02d - %(artist)s - %(title)s.%(ext)s"`
     - Album: `youtube-dl ###URL###  ...etc... --output "%(album)s - %(artist)s - %(track)s.%(ext)s"`
@@ -71,6 +81,9 @@ wget \
 
 - [jq](https://stedolan.github.io/jq/)
     - Example: `jq -j -M --stream -f discord1.jq` [discord1.jq](https://gist.github.com/willsheppard/f9b7cc9b130784ffd7bd8f144cf892f8)
+
+- [XPath Helper](https://chrome.google.com/webstore/detail/xpath-helper/hgimnogjllphhhkhlmebbmlgjoejdpjl)
+    - Example: Ctrl-Shift-X (or Command-Shift-X on Mac)
 
 ## Techniques
 
