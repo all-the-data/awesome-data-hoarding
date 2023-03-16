@@ -151,12 +151,12 @@ These are all equivalent ways to achieve the same thing:
 1. Chrome: DevTools | Elements | <body> | right-click | Copy | Copy element | Paste into text editor --> works, full HTML
 1. Chrome: Extensions | XPath Helper | Ctrl-Shift-X | Hover over element | Shift | Edit XPath to remove e.g. `[409]` | Append `/@href` --> works, list of URLs
 1. Chrome: DevTools | Console | [<load jquery>](https://stackoverflow.com/a/7474386) | [<XPath add-in>](https://stackoverflow.com/a/20495940) | `$(document).xpathEvaluate('//body/div/foo')`
-1. Chrome: DevTools | Elements | right-click | Copy | Copy JS | (paste into console and edit)
+1. Chrome: DevTools | Elements | right-click | Copy | Copy JS | (paste into console and edit - see snippet below)
 1. Chrome: Extensions | AutoHAR | chrome --auto-open-devtools-for-tabs | ...etc
 1. Chrome: DevTools | Network | Filter | Fetch/XHR | https://music.youtube.com/youtubei/v1/browse/...etc... | (a) Save all as HAR with content, (b) (down-arrow near top-right) Export HAR... 
 1. (Idea) Headless chrome + puppeteer or playwright
 
-Javascrip snippet:
+Javascript snippet:
     
 ```
 items = document.querySelectorAll("#items > ytmusic-two-row-item-renderer");
@@ -171,6 +171,8 @@ items.forEach((item) => {
     );
 });
 ```
+
+[Save data out of console](https://stackoverflow.com/questions/41032565/how-to-copy-the-objects-from-chrome-console-window) via clipboard or writing a file.
 
 ### Case studies
 
