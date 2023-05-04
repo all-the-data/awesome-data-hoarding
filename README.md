@@ -6,7 +6,7 @@ Inspired by Reddit's [/r/DataHoarder](https://www.reddit.com/r/DataHoarder/)
 
 ## Quick reference
 
-Which archiving tool should you choose?
+Which archiving tool should you choose for each web service?
 
 - Amazon Video: Unknown. Check torrents instead.
 
@@ -19,6 +19,8 @@ Which archiving tool should you choose?
 - Netflix: Unknown. Check torrents instead.
 
 - Reddit thread: TO DO
+
+- SoundCloud: [youtube-dl](https://youtube-dl.org/) / [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 
 - Tumblr: [TumblThreeApp](https://github.com/TumblThreeApp/TumblThree) (Windows)
 
@@ -186,8 +188,10 @@ items.forEach((item) => {
 ## Communities
 
 - https://www.reddit.com/r/DataHoarder
+- https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community
 
 ## Similar projects
 
-- https://github.com/igorbarinov/awesome-data-engineering
+- https://github.com/iipc/awesome-web-archiving
 - https://github.com/lorien/awesome-web-scraping
+- https://github.com/igorbarinov/awesome-data-engineering
