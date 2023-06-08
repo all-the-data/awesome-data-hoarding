@@ -22,7 +22,7 @@ Which archiving tool should you choose for each web service?
 
 - SoundCloud: [youtube-dl](https://youtube-dl.org/) / [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 
-- Tumblr: [TumblThreeApp](https://github.com/TumblThreeApp/TumblThree) (Windows)
+- Tumblr: [TumblThreeApp](https://github.com/TumblThreeApp/TumblThree) (Windows). Viewers: [1](https://github.com/jacob-pro/tumbl-three-viewer), [2](https://github.com/willsheppard/random-scripts/blob/master/TumblThree_BackupViewer.html).
 
 - Twitter: [ThreadReaderApp](https://threadreaderapp.com/)
 
