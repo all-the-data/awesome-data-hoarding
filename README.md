@@ -18,7 +18,8 @@ Which archiving tool should you choose for each web service?
 
 - Netflix: Unknown. Check torrents instead.
 
-- Reddit thread: TO DO
+- Reddit: [Bulk-Downloader-For-Reddit](https://github.com/aliparlakci/bulk-downloader-for-reddit) / [BDFRX](https://github.com/OMEGARAZER/bulk-downloader-for-reddit-x#differences-from-bdfr) / [Gallery-DL](https://github.com/mikf/gallery-dl) / [RipMe](https://github.com/RipMeApp2/ripme).
+  - Historial data dumps: [the-eye](https://the-eye.eu/redarcs/) / [torrents](https://academictorrents.com/userdetails.php?id=9863)
 
 - SoundCloud: [youtube-dl](https://youtube-dl.org/) / [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 
