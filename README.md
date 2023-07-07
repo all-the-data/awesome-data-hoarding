@@ -175,7 +175,15 @@ items.forEach((item) => {
 });
 ```
 
-[Save data out of console](https://stackoverflow.com/questions/41032565/how-to-copy-the-objects-from-chrome-console-window) via clipboard or writing a file.
+Shorter snippet:
+```
+var output = '';
+document.querySelectorAll("h3 > div > div > a").forEach((item) => { output += item.text + "\n"; });
+console.log(output);
+console.save(output);
+```
+
+[Save data out of console](https://stackoverflow.com/questions/41032565/how-to-copy-the-objects-from-chrome-console-window) via clipboard or writing a file (provides `console.save()` command.
 
 ### Case studies
 
