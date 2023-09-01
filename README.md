@@ -189,6 +189,7 @@ console.save(output);
 
 - **naive-slack-scraper**. Hypothetical code that cannot exist, as it potentially wouldn't follow terms of service. So don't look for it.
 - [pokemon-data](https://github.com/pokemon-names/pokemon-data/blob/main/data/README.md). jq examples.
+- [moar jq examples](https://wills-tech-notes.blogspot.com/2022/08/jq-cheat-sheet.html)
 
 ## Discussion
 
