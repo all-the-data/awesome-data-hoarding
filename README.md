@@ -39,9 +39,7 @@ Which archiving tool should you choose for each web service?
 
 Details of precise sets of commands.
 
-### General purpose
-
-- [wget](https://www.gnu.org/software/wget/manual/wget.html)
+- [wget](https://www.gnu.org/software/wget/manual/wget.html) for websites
 
 ```
 wget \
@@ -55,22 +53,20 @@ wget \
     'http://www.example.com/'
 ```
 
-- [StreamRipper](http://streamripper.sourceforge.net)
+- [StreamRipper](http://streamripper.sourceforge.net) for music
     - Example: `streamripper ###URL### -u "FreeAmp/2.x" -q -l 86400`
 
-- [Chrome DevTools](https://developer.chrome.com/docs/devtools)
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools) for anything via a web browser
     - [network tab](https://developer.chrome.com/docs/devtools/network/reference)
     - [resources tab](https://developer.chrome.com/docs/devtools/resources)
 
-### Specialised
-
-- Mediawiki
+- Mediawiki for wiki sites
     - For an XML dump containing wikitext...
     - Copy names of pages from `/wiki/Special:AllPages`...
     - Paste into `/wiki/Special:Export`
     - (optional) Parse resulting wikitext with [mwparserfromhell](https://github.com/earwig/mwparserfromhell).
 
-- [youtube-dl](https://yt-dl.org) / [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+- [youtube-dl](https://yt-dl.org) / [yt-dlp](https://github.com/yt-dlp/yt-dlp) for Youtube and other video/audio
   - Video
 
 ```
@@ -136,11 +132,23 @@ done
 - [XPath Helper](https://chrome.google.com/webstore/detail/xpath-helper/hgimnogjllphhhkhlmebbmlgjoejdpjl)
     - Example: Ctrl-Shift-X (or Command-Shift-X on Mac)
 
-- [AutoHAR](https://github.com/Aloisius/autohar)
+- HAR recorders (if for some reason Chrome's "Save as HAR" feature isn't sufficient)
+  - [AutoHAR](https://github.com/Aloisius/autohar)
+  - [HAR Recorder](https://chrome.google.com/webstore/detail/har-recorder/emfabjnfjiknifjlfpjobbecfepplhkd)
 
-- [HAR Recorder](https://chrome.google.com/webstore/detail/har-recorder/emfabjnfjiknifjlfpjobbecfepplhkd)
+- HAR extractors (to retrieve the original content from inside a HAR file) 
+  - [How can I extract the contents of a .HAR file](https://www.reddit.com/r/browsers/comments/bczaiz/how_can_i_extract_the_contents_of_a_har_file_in)
+  - [quentint/har-extract.js](https://gist.github.com/quentint/7236a6a7cae187507b0c1dfd4b1ed1c5)
+  - [JC3/harextract](https://github.com/JC3/harextract) + see [forks](https://github.com/JC3/harextract/forks)
+  - [crazypatoto/MorkVideoExtractor](https://github.com/crazypatoto/MorkVideoExtractor)
+  - [outersky/har-tools](https://github.com/outersky/har-tools)
 
 ## Techniques
+
+### Combine streamed .ts files and m3u8 playlist/chunklist into an mpeg/mp4 video
+
+- After extracting the .m4u8 and .ts files from HAR, run something like:
+  - `ffmpeg -i playlist.m3u8 -c copy -bsf:a aac_adtstoasc output.mp4`
 
 ### Extract playlist data from YouTube and YT Music
 
