@@ -18,7 +18,17 @@ Which archiving tool should you choose for each web service?
 
 - Netflix: Unknown. Check torrents instead.
 
-- Reddit: [Bulk-Downloader-For-Reddit](https://github.com/aliparlakci/bulk-downloader-for-reddit) / [BDFRX](https://github.com/OMEGARAZER/bulk-downloader-for-reddit-x#differences-from-bdfr) / [Gallery-DL](https://github.com/mikf/gallery-dl) / [RipMe](https://github.com/RipMeApp2/ripme).
+- Reddit: Various tools
+  - Tools to save whole threads
+    - [Bulk-Downloader-For-Reddit](https://github.com/aliparlakci/bulk-downloader-for-reddit)
+    - [BDFRX](https://github.com/OMEGARAZER/bulk-downloader-for-reddit-x#differences-from-bdfr)
+    - [Gallery-DL](https://github.com/mikf/gallery-dl)
+    - [RipMe](https://github.com/RipMeApp2/ripme).
+  - "Print" method for threads
+    - Change `www.reddit.com` to `old.reddit.com` -- all comments will now be expanded
+    - Sort by: New
+    - Use [cleanly print](https://chromewebstore.google.com/detail/cleanly-print/afloocnncgjhdlacbejppjepboilajdg) chrome extension
+    - Click to remove areas, also click to 'tag' areas for printing.
   - Historial data dumps: [the-eye](https://the-eye.eu/redarcs/) / [torrents](https://academictorrents.com/userdetails.php?id=9863)
 
 - SoundCloud: [youtube-dl](https://youtube-dl.org/) / [yt-dlp](https://github.com/yt-dlp/yt-dlp)
