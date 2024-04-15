@@ -45,7 +45,17 @@ Which archiving tool should you choose for each web service?
 
 - Youtube video/music: [youtube-dl](https://youtube-dl.org/) (see below for notes) / [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 
+- Radio scrobbling / Music identification: [Shazam](https://chromewebstore.google.com/detail/shazam-find-song-names-fr/mmioliijnhnoblpgimnlajmefafdfilb) or [AHA Music finder](https://chromewebstore.google.com/detail/aha-music-song-finder-for/dpacanjfikmhoddligfbehkpomnbgblf)
+
+
 ## Scraping tools
+
+- Radio scrobbling
+  - Play radio station with low quality playlist: [La Mega, Malaga](https://onlineradiobox.com/es/lamegaradio/).
+  - Install chrmoe browser extension [Shazam](https://chromewebstore.google.com/detail/shazam-find-song-names-fr/mmioliijnhnoblpgimnlajmefafdfilb) or [AHA Music finder](https://chromewebstore.google.com/detail/aha-music-song-finder-for/dpacanjfikmhoddligfbehkpomnbgblf)
+  - On Linux use `xdotool` to automate clicking on chrome browser extension icons to activate music identification: `watch "xdotool mousemove 3442 90 click 1; sleep 20; xdotool mousemove 3476 90 click 1; sleep 20"` (adjust coords as needed)
+  - Does not require speakers to be on
+
 
 Details of precise sets of commands.
 
