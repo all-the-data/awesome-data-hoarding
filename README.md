@@ -41,6 +41,12 @@ Which archiving tool should you choose for each web service?
 
 - Private torrent trackers: Might contain any TV or movie ever broadcat. It can be difficult to get an invite, and you may need to maintain an upload ratio.
 
+- Individual web pages:
+  - Save as | Web Page, HTML Only
+  - Save as | Web Page, Single File
+  - Save as | Web Page, Complete
+  - Print | Save as PDF
+  - Chrome extension [SingleFile](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle) <-- Recommended!
 - Websites generally: wget, httrack or [ArchiveBot](https://wiki.archiveteam.org/index.php?title=ArchiveBot).
 
 - Youtube video/music: [youtube-dl](https://youtube-dl.org/) (see below for notes) / [yt-dlp](https://github.com/yt-dlp/yt-dlp)
