@@ -169,6 +169,11 @@ done
   - [crazypatoto/MorkVideoExtractor](https://github.com/crazypatoto/MorkVideoExtractor)
   - [outersky/har-tools](https://github.com/outersky/har-tools)
 
+- Convert between file formats
+  - Convert media online: [https://cloudconvert.com/ogg-to-mp3]([url](https://cloudconvert.com/ogg-to-mp3))
+  - Convert media offline: [ffmpeg](https://www.ffmpeg.org/)
+  - Convert documents: [imagemagick]([url](https://imagemagick.org/)) / Pandoc
+
 ## Techniques
 
 ### Combine streamed .ts files and m3u8 playlist/chunklist into an mpeg/mp4 video
