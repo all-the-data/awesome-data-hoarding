@@ -31,7 +31,7 @@ Which archiving tool should you choose for each web service?
     - Click to remove areas, also click to 'tag' areas for printing.
   - Historial data dumps: [the-eye](https://the-eye.eu/redarcs/) / [torrents](https://academictorrents.com/userdetails.php?id=9863)
 
-- SoundCloud: [youtube-dl](https://youtube-dl.org/) / [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+- SoundCloud: [youtube-dl](https://youtube-dl.org/) / [yt-dlp](https://github.com/yt-dlp/yt-dlp) / [lucida.to]([url](https://lucida.to/))
 
 - Tumblr: [TumblThreeApp](https://github.com/TumblThreeApp/TumblThree) (Windows). Viewers: [1](https://github.com/jacob-pro/tumbl-three-viewer), [2](https://github.com/willsheppard/random-scripts/blob/master/TumblThree_BackupViewer.html).
 
