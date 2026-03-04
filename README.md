@@ -33,6 +33,8 @@ Which archiving tool should you choose for each web service?
 
 - SoundCloud: [youtube-dl](https://youtube-dl.org/) / [yt-dlp](https://github.com/yt-dlp/yt-dlp) / [lucida.to]([url](https://lucida.to/))
 
+- Telegram: [Telegram-Archive](https://github.com/GeiserX/Telegram-Archive). Automated incremental backups of messages and media via Docker.
+
 - Tumblr: [TumblThreeApp](https://github.com/TumblThreeApp/TumblThree) (Windows). Viewers: [1](https://github.com/jacob-pro/tumbl-three-viewer), [2](https://github.com/willsheppard/random-scripts/blob/master/TumblThree_BackupViewer.html).
 
 - Twitter: [ThreadReaderApp](https://threadreaderapp.com/)
@@ -149,6 +151,11 @@ done
     - Example: `docker run --rm -v /var/www/zaphod/adhd:/app/out tyrrrz/discordchatexporter:stable export --channel ###ID### --token ###SECRET### --format Json`
     - List guilds: `docker run tyrrrz/discordchatexporter:stable guilds`
     - List channels: `docker run tyrrrz/discordchatexporter:stable channels --guild ###ID###`
+
+- [Telegram-Archive](https://github.com/GeiserX/Telegram-Archive) for Telegram chats and media
+    - Example: `docker compose up -d`
+    - Supports incremental backups, web viewer, real-time listener, media deduplication, and push notifications
+    - Configurable schedule via cron, SQLite or PostgreSQL storage
 
 ## Processing tools
 
