@@ -47,7 +47,7 @@ Which archiving tool should you choose for each web service?
   - Save as | Web Page, Complete
   - Print | Save as PDF
   - Chrome extension [SingleFile](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle) <-- Recommended!
-- Websites generally: wget, httrack, [ArchiveBot](https://wiki.archiveteam.org/index.php?title=ArchiveBot) or [Wayback-Archive](https://github.com/GeiserX/Wayback-Archive) (download complete websites from the Wayback Machine).
+- Websites generally: wget, httrack, [ArchiveBot](https://wiki.archiveteam.org/index.php?title=ArchiveBot) or [Wayback-Archive](https://github.com/GeiserX/Wayback-Archive).
 
 - Youtube video/music: [youtube-dl](https://youtube-dl.org/) (see below for notes) / [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 
