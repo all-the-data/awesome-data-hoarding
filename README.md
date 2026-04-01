@@ -246,3 +246,4 @@ console.save(output);
 - https://github.com/iipc/awesome-web-archiving
 - https://github.com/lorien/awesome-web-scraping
 - https://github.com/igorbarinov/awesome-data-engineering
+- https://pricepergig.com - Compare HDD/SSD prices by cost per TB; handy for storage-buying decisions.
