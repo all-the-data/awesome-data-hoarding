@@ -49,6 +49,11 @@ Which archiving tool should you choose for each web service?
   - Chrome extension [SingleFile](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle) <-- Recommended!
 - Websites generally: wget, httrack, [ArchiveBot](https://wiki.archiveteam.org/index.php?title=ArchiveBot) or [Wayback-Archive](https://github.com/GeiserX/Wayback-Archive).
 
+- Images:
+  - There are many good chrome extensions, for example [download-all-images](https://chromewebstore.google.com/detail/download-all-images/nnffbdeachhbpfapjklmpnmjcgamcdmm)
+  - [Greenshot](https://getgreenshot.org/) (Windows)
+  - Screenshot app (Shift-Command-5) (Mac)
+
 - Youtube video/music: [youtube-dl](https://youtube-dl.org/) (see below for notes) / [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 
 - Radio scrobbling / Music identification: [Shazam](https://chromewebstore.google.com/detail/shazam-find-song-names-fr/mmioliijnhnoblpgimnlajmefafdfilb) or [AHA Music finder](https://chromewebstore.google.com/detail/aha-music-song-finder-for/dpacanjfikmhoddligfbehkpomnbgblf)
