@@ -63,6 +63,7 @@ Which archiving tool should you choose for each web service?
 
 ## Scraping tools
 
+- Adding a proxy entry to the Scraping tools section, which currently covers tools for fetching and archiving web content.
 - Radio scrobbling
   - Play radio station with low quality playlist: [La Mega, Malaga](https://onlineradiobox.com/es/lamegaradio/).
   - Install chrmoe browser extension [Shazam](https://chromewebstore.google.com/detail/shazam-find-song-names-fr/mmioliijnhnoblpgimnlajmefafdfilb) or [AHA Music finder](https://chromewebstore.google.com/detail/aha-music-song-finder-for/dpacanjfikmhoddligfbehkpomnbgblf)
