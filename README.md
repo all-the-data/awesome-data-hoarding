@@ -8,6 +8,8 @@ Inspired by Reddit's [/r/DataHoarder](https://www.reddit.com/r/DataHoarder/)
 
 Which archiving tool should you choose for each web service?
 
+- Amazon orders: [amazon-orders](https://github.com/alexdlaird/amazon-orders)
+
 - Amazon Video: Unknown. Check torrents instead.
 
 - BBC iPlayer: [youtube-dl](https://youtube-dl.org/) / [yt-dlp](https://github.com/yt-dlp/yt-dlp)
