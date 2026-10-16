@@ -257,3 +257,5 @@ console.save(output);
 ## Related resources
 
 - https://pricepergig.com - Compare HDD/SSD prices by cost per TB; handy for storage-buying decisions.
+- https://www.outletpicks.com/categories/storage - Amazon US hard drives and SSDs ranked by price per TB, filterable by size (4 TB to 16 TB+), NAS class and renewed.
+- https://www.outletpicks.com/raid-calculator - Usable space and failures survived for RAID 0/1/5/6/10, Synology SHR and ZFS RAID-Z, priced with current NAS drive prices.
