@@ -87,6 +87,7 @@ wget \
 ```
 
 - [Wayback-Archive](https://github.com/GeiserX/Wayback-Archive) for downloading complete websites from the Wayback Machine with full asset preservation for offline viewing (Python, GPL-3.0)
+- [SnapshotArchive](https://snapshotarchive.com) for scheduled website screenshot archiving with visual change detection and alerting
 
 - [StreamRipper](http://streamripper.sourceforge.net) for music
     - Example: `streamripper ###URL### -u "FreeAmp/2.x" -q -l 86400`
