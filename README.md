@@ -49,6 +49,7 @@ Which archiving tool should you choose for each web service?
   - Save as | Web Page, Complete
   - Print | Save as PDF
   - Chrome extension [SingleFile](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle) <-- Recommended!
+  - [CurlShot](https://curlshot.com/): online tool and API that saves a full-page capture of a URL as PNG, PDF or a scrolling video, optionally hiding cookie banners and ads (free plan: 100 captures/month)
 - Websites generally: wget, httrack, [ArchiveBot](https://wiki.archiveteam.org/index.php?title=ArchiveBot) or [Wayback-Archive](https://github.com/GeiserX/Wayback-Archive).
 
 - Images:
