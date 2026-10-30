@@ -88,6 +88,9 @@ wget \
 
 - [Wayback-Archive](https://github.com/GeiserX/Wayback-Archive) for downloading complete websites from the Wayback Machine with full asset preservation for offline viewing (Python, GPL-3.0)
 
+- [Free Proxy List](https://github.com/proxifly/free-proxy-list) for spreading requests across free HTTP, SOCKS4 and SOCKS5 proxies, tested and refreshed every 5 minutes
+    - Example: `curl -x "$(curl -s https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/protocols/http/data.txt | shuf -n 1)" 'http://www.example.com/'`
+
 - [StreamRipper](http://streamripper.sourceforge.net) for music
     - Example: `streamripper ###URL### -u "FreeAmp/2.x" -q -l 86400`
 
