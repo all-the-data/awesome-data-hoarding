@@ -257,3 +257,4 @@ console.save(output);
 ## Related resources
 
 - https://pricepergig.com - Compare HDD/SSD prices by cost per TB; handy for storage-buying decisions.
+- https://tbindex.com - Compare HDD/SSD prices by cost per TB in India and the US; handy for storage-buying decisions.
